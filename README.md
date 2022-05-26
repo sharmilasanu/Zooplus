@@ -1,5 +1,5 @@
 #  Zooplus:ledger:
-## :white_check_mark: What is Zooplus Ecommerce?
+## :white_check_mark: What is Zooplus?
 
 A simple Ecommerce Website Prototype with Homepage, Product details Page and a cart page.
 
