@@ -1,5 +1,3 @@
-# Zooplus Ecommerce
- 
 #  Zooplus:ledger:
 ## :white_check_mark: What is Zooplus Ecommerce?
 
