@@ -13,5 +13,5 @@ A simple Ecommerce Website Prototype with Homepage, Product details Page and a c
 
 ## :white_check_mark: Tech Stack
 
-Frontend :  React.js 
-Backend : Node.js, Express.js, Mongodb
+1.Frontend :  React.js 
+1.Backend : Node.js, Express.js, Mongodb
