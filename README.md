@@ -1,7 +1,7 @@
 #  Zooplus:ledger:
 ## :white_check_mark: What is Zooplus?
 
-A simple Ecommerce Website Prototype with Homepage, Product details Page and a cart page.
+ A REST API developed with Node.js, Express.js and Mongodb.
 
 ## :white_check_mark: Objective
 
