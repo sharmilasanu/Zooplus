@@ -8,7 +8,6 @@ const mongoose = require('mongoose');
         },
         quantity : {
             type: Number,
-            default: 1
         }
       }
     ],
