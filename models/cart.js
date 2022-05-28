@@ -16,5 +16,4 @@ const mongoose = require('mongoose');
      {timestamps:true }
   );
   
-  let Cart = mongoose.model('Cart',cartSchema)
-  module.exports.Cart = Cart;
+  module.exports = mongoose.model('Cart',cartSchema)
