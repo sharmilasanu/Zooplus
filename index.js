@@ -3,7 +3,8 @@ const express = require("express"),
       mongoose = require("mongoose"),
       userRoute = require("./routes/user"),
       authRoute = require("./routes/auth"),
-      productRoute = require("./routes/products")
+      productRoute = require("./routes/products"),
+      cartRoute = require("./routes/cart")
       const app = express();
 const dotenv = require("dotenv");
 dotenv.config()
@@ -20,7 +21,7 @@ app.use(express.json())
 app.use("/api/auth", authRoute)
 app.use("/api/products", productRoute)
 app.use("/api/users", userRoute)
-
+app.use("/api/cart", cartRoute)
 
 
 //Error handling Middleware
