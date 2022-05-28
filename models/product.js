@@ -14,5 +14,4 @@ const mongoose = require('mongoose');
      {timestamps:true }
   );
   
-  let Products = mongoose.model('Products',productSchema)
-  module.exports.Products = Products;
+  module.exports = mongoose.model('Products',productSchema)
