@@ -3,9 +3,7 @@ const mongoose = require('mongoose');
     userId: {type: String, required:true,unique:true },
     products: [
       {
-        productId : {
-            type:String
-        },
+        productId : { type: String,required:true,unique:true},
         productImage : {
           type:String
         },
