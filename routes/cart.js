@@ -14,21 +14,24 @@ router.post("/",  async (req, res) => {
   }
 });
 
-//UPDATE
+
+
+//UPSERT
 router.put("/:id", async (req, res) => {
   try {
-    const updatedCart = await Cart.findByIdAndUpdate(
+    const updatedCart = await Cart.findOneAndUpdate(
       req.params.id,
       {
-        $set: req.body,
+      $set: req.body,
       },
-      { new: true }
+      { upsert: true }
     );
     res.status(200).json(updatedCart);
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
 
 //DELETE
 router.delete("/:id", async (req, res) => {
