@@ -6,9 +6,17 @@ const mongoose = require('mongoose');
         productId : {
             type:String
         },
+        productImage : {
+          type:String
+        },
+        productPrice : {
+          type:Number
+        },
+        productTitle : {
+          type:String
+        },
         quantity : {
             type: Number,
-            default: 1
         }
       }
     ],
