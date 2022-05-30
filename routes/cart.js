@@ -17,14 +17,14 @@ router.post("/",  async (req, res) => {
 
 
 //UPSERT
-router.put("/:id", async (req, res) => {
+router.put("/:userId", async (req, res) => {
   try {
     const updatedCart = await Cart.findOneAndUpdate(
-      req.params.id,
+      req.params.userId,
       {
       $set: req.body,
       },
-      { upsert: true }
+      { new:true,upsert: true }
     );
     res.status(200).json(updatedCart);
   } catch (err) {
