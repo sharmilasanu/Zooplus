@@ -41,7 +41,7 @@ app.use("/api/cart", cartRoute)
 
 //Error handling Middleware
 app.use((err,req,res, next) =>{
-console.error(err,stack);
+console.error(err);
 res.status(500).send('Something Broke!');
 });
 
