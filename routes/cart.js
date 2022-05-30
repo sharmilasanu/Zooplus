@@ -21,11 +21,13 @@ router.put("/:userId", async (req, res) => {
  
   try {
     const productObj = { 
-      "productId": req.body.productId, 
-      "productImage": req.body.productImage, 
-      "productPrice": req.body.productPrice,
-      "productTitle" : req.body.productTitle,
-      "quantity" : req.body.quantity
+     
+      "productId": req.body.products.productId, 
+      "productImage": req.body.products.productImage, 
+      "productPrice": req.body.products.productPrice,
+      "productTitle" : req.body.products.productTitle,
+      "quantity" : req.body.products.quantity
+
     };
     const updatedCart = await Cart.findOneAndUpdate(
       req.params.userId,
