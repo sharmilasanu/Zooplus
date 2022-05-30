@@ -18,13 +18,21 @@ router.post("/",  async (req, res) => {
 
 //UPSERT
 router.put("/:userId", async (req, res) => {
+ 
   try {
+    const productObj = { 
+      "productId": req.body.productId, 
+      "productImage": req.body.productImage, 
+      "productPrice": req.body.productPrice,
+      "productTitle" : req.body.productTitle,
+      "quantity" : req.body.quantity
+    };
     const updatedCart = await Cart.findOneAndUpdate(
       req.params.userId,
       {
-      $set: req.body,
+      $push:{products : productObj }
       },
-      { new:true,upsert: true }
+      { new: true }
     );
     res.status(200).json(updatedCart);
   } catch (err) {
